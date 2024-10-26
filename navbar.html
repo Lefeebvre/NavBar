@@ -3,51 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="navbar2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>NavBar</title>
 </head>
+
 <body>
-    <nav>
-        <header>
-          <div class="container2">
-            <img id="ear_logo" src="ear_logo.png" alt="Logo da EAR"> 
-            <a alt="E-mail para contato" href="mailto:it@ear.com.br" class="link" >Dúvidas</a>
+
+    <header class="header">
+        <img class="Logo" src="ear_logo.png" alt="Logo da EAR">
+        <nav class="dúvidas">
+            <a href="mailto:it@ear.com.br">Dúvidas</a>
             <img class="help" src="help_16dp_076D80.svg" alt="Icone de ajuda">
-          </div>
-        </header>
+        </nav>
+    </header>
+
+    <nav class="navbar">
+            
+        <div class="navbar-div">
+            <h1>COMPRAS EAR</h1>
+            <img class="totus" src="totus.vng.png" alt="Logo da Totvs">
+            <img class="compras-img" src="compras imagem.png" alt="Imagem de compras do fundo">
+        </div>
+        <div class="totvs-div">
+            <h3>TOTVS</h3>
+        </div>
+
     </nav>
 
-    <nav class="navbar navbar-light bg-light">
-        <div class="container">
-          <h1>COMPRAS EAR</h1>
-          <img class="totus" src="totus.vng.png" alt="Logo da Totvs">
-            <img id="compras" src="compras imagem.png" alt="imagem de compras">
+    <nav>
+        <div class="textos-orçamentos">
+            <h2>ORÇAMENTOS</h2>
+            <p>SELECIONE O ARQUIVO EM PDF DE ORÇAMENTO</p>
         </div>
-        <div>
-          <h2 class="totvs">TOTVS</h2>
+        <div class="drop-files">
+            <div class="drop-div">
+                <label for="formFileSm" class="file-upload">
+                    <span>ESCOLHER ARQUIVOS</span>
+                    <i class="fa fa-paperclip"></i>
+                </label>
+                <input class="drop-form" id="drop-form-id" type="file" style="display: none;">
+                <span id="file-name">NENHUM ARQUIVO SELECIONADO</span>
+            </div>
         </div>
-        <div class="container">
-        </div>
-      </nav>
-      <nav>
-        <div>
-          <h2>Orçamentos</h2>
-          <p>Selecione o arquivo em PDF de orçamento</p>
-        </div>
-        <div class="container3">
-          <div class="mb-3">
-            <label for="formFileSm" class="custom-file-upload">
-              <span>Escolher arquivo</span>
-              <i class="fa fa-paperclip"></i>
-            </label>
-            <input class="form-control form-control-sm" id="formFileSm" type="file" style="display: none;">
-            <span id="file-name">Nenhum arquivo selecionado</span>
-          </div>
-        </div>            
-      </nav>
+    </nav>
+
 </body>
-</html>
