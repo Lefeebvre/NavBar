@@ -56,6 +56,8 @@ a {
     height: 22%;
     padding-top: 23px;
     opacity: 40%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 h1 {
@@ -156,3 +158,6 @@ p {
 span {
     font-family: 'Open Sans';
 }
+
+/* Media Querie*/
+
